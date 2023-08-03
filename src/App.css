@@ -1,0 +1,99 @@
+:root {
+  --color-black-400: #333;
+  --color-black-600: #000;
+  
+  --color-white-300: #e1e1f6;
+  --color-white-600: #FFF;
+  
+  --color-primary-600: dodgerblue;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  justify-content: center;
+}
+#root {
+  width: 460px;
+  padding: 52px;
+  border-radius: 11px;
+  box-shadow: 8px 9px 32px rgba( 0 0 0 /.15);
+}
+#header {
+  gap: 9px;
+  display: grid;
+  color: var(--color-black-400);
+}
+#header span{
+  color: var(--color-primary-600);
+}
+#header p {
+  color: var(--color-black-600);
+}
+#header .tweeter-user {
+  cursor: pointer;
+  color: var(--color-primary-600);
+}
+#post {
+  width: 100%;
+  gap: 1.7rem;
+  margin-top: 26px;
+}
+#post {
+  display: grid;
+  place-content: center;
+}
+#post img {
+  width: 100%;
+  height: 230px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+#PostContent .Post-subtitle {
+  line-height: 1.6rem;
+  color: #666674;
+}
+#Tweets  {
+  width: 100%;
+  display: grid;
+  gap: 11px;
+  margin-top: 19px;
+}
+#Tweets .tweet {
+  font-size: 1rem;
+  color: #3b3b43;
+}
+#Tweets input {
+  width: 80%;
+  padding: 11px;
+  border-radius: 50px 0px 0px 50px;
+
+  border: 0;
+  background: var(--color-white-300);
+
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--color-black-400);
+}
+#Tweets input:focus {
+  outline: none;
+}
+#Tweets button {
+  width: 20%;
+  padding: 11px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-white-600);
+  background: var(--color-primary-600);
+  border-radius: 0px 50px 50px 0px;
+}
+
+@media (max-width: 768px) {
+  #root {
+    width: 360px;
+    padding: 32px;
+  }
+}
